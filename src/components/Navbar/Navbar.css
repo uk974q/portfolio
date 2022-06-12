@@ -1,0 +1,15 @@
+.logo-icon{
+    width: 24px;
+    height: 24px;
+}
+.logo-title{
+    color: beige;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.navbar .fa-caret-down{
+    color: white;
+}
+.navbar-nav a{
+    color: beige;
+}
