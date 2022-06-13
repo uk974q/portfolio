@@ -1,16 +1,15 @@
-import './Navbar.css'
+import './Navigation.css'
 import logo from "../../images/logo-main.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
-
-export default function Navbar(){
-    return(
-        <nav className="navbar navbar-expand-lg bg-dark">
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+{/* <nav className="navbar navbar-expand-lg bg-dark">
             <div className="container-fluid">
                 <img className="logo-icon" src={logo} alt="Logo" />
                 <h1 className="logo-title">Portfolio</h1>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                {/* Change icon to fontawesome */}
                 <span className="navbar-toggler-icon"><FontAwesomeIcon icon={faCaretDown} /></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -23,7 +22,28 @@ export default function Navbar(){
                 </div>
                 </div>
             </div>
-        </nav>  
+        </nav> */}
+export default function Navigation(){
+    return(
+        <Navbar bg="dark" variant="dark">
+            <Container>
+                <Navbar.Brand href="#home">
+                    <img className="logo-icon" src={logo} alt="Logo" />
+                    Portfolio
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mx-auto">
+                        <Nav.Link href="#home">Profile</Nav.Link>
+                        <Nav.Link href="#link">Skills</Nav.Link>
+                        <Nav.Link href="#link">Experiences</Nav.Link>
+                        <Nav.Link href="#link">Education</Nav.Link>
+                        <Nav.Link href="#link">Contact</Nav.Link>                    
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+          
         
     )
 }
