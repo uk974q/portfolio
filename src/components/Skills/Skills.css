@@ -1,20 +1,5 @@
-/* section{
-   min-height: 100vh; 
-} */
-.carousel-container{
+.skill-container{
     display: flex;
-    flex-direction: column-reverse;
-    color: white;
-}
-.carousel-container .carousel-indicators{
-    position: relative;
-}
-/* .carousel-container .lang-image{
-    width: 25px;
-    height: auto;
-    align-self: center;
-    border-radius: 50%;
-} */
-.carousel-inner .carousel-item{
-    /* background-color: grey; */
+    align-items: center;
+    justify-content: center;
 }
