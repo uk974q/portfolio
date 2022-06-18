@@ -1,9 +1,27 @@
+.navbar-container{
+    background-color: black;    
+    height: 8vh;
+
+    
+}
+.nav-container{
+    
+}
+.logo-class{
+    /* position: absolute; */
+}
+.link-container{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    /* position: relative; */
+}
 .logo-icon{
     width: 24px;
     height: 24px;
 }
 .logo-title{
-    color: beige;
+    color: white;
     font-size: 16px;
     margin-bottom: 0;
 }
@@ -12,4 +30,5 @@
 }
 .navbar-nav a{
     color: beige;
+
 }

@@ -1,0 +1,29 @@
+.showcase-page{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: black; */
+    background-color: #fff5fe;
+
+    height: 80vh;
+}
+.showcase-page .sidebar{
+    background-color: #ff6863;
+    display: flex;
+    flex: 20%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.showcase-page .sidebar h2{
+    padding-block: 10px;
+}
+.showcase-page .sidebar h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: white;
+}
+
+.showcase-page .display{
+    flex:80%;
+}
+

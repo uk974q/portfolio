@@ -1,0 +1,29 @@
+.form-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    height: 80vh;
+}
+.form-page .heading{
+    color: wheat;
+}
+.form-page .heading span{
+    margin-inline:10px;
+}
+.form-page form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    /* background-color: beige; */
+    /* width: 50%; */
+}
+.form-page input, textarea{
+    /* width: 100%; */
+    /* padding: 10px; */
+    border-radius: 10px;
+}
+.form-page .text-muted, label{
+    color: white !important;
+    
+}

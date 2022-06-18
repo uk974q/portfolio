@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #fff;
+    height: 80vh;
 }
 .svg-container{
     flex: 50%;
@@ -18,4 +19,21 @@
 }
 .progress-width .progress-bar{
     width: 100px !important;
+}
+.designation:hover, .name:hover, .location-label:hover{
+    color: red;;
+}
+.name{
+    font-family:'KdamThmorPro';
+}
+.aside-header button{
+    border-radius: 5px;
+}
+.aside-header .location-label{
+    font-size: 18px;
+}
+
+.aside-header .location-icon{
+    color: red;
+    margin-right: 5px;
 }

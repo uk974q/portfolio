@@ -12,3 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'KdamThmorPro';
+  src: local('MyFont'), url(./fonts/Kdam_Thmor_Pro/KdamThmorPro-Regular.ttf) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}

@@ -67,8 +67,33 @@ svg.selectAll(".circ")
     .attr("fill", (d) => color(d.source))
     .attr("r", (d) => size(d["val"]))
     .attr("cx", (d) => xScale("Single"))
-    .attr("cy", (d) => yScale(d.val));
+    .attr("cy", (d) => yScale(d.val))
+    .on("mouseover",function(event,d){
+        console.log(d)
+        showTooltip(d.source, d.x, d.y, size(d["val"]))
+        d3.selectAll(".circ").attr("opacity",0.2)
+        d3.select(this).attr("opacity",1)
+        // document.getElementById("skillLabel").innerHTML = d.source
+    })
+    .on("mouseout",function(){
+        removeTooltip()
+        d3.selectAll(".circ").attr("opacity",1)
+        // document.getElementById("skillLabel").innerHTML = ""
+    })
 
+function showTooltip(content,x,y, r){
+    let tx = (+x) + (+r) + (+r)
+    let ty = y
+    svg.append("text")
+        .attr("class","tt skillLabel")
+        .attr("x",tx)
+        .attr("y",ty)
+        .attr('fill', 'white')
+        .text(content)
+}
+function removeTooltip(){
+    d3.selectAll(".tt").remove()
+}
 
 let simulation = d3.forceSimulation(data)
   .force("x", d3.forceX((d) => {
@@ -103,7 +128,10 @@ let simulation = d3.forceSimulation(data)
     // }
 
     return (
-        <div className="skill-container"></div>
+        <div>
+            <div className="skill-container"></div>
+        </div>
+        
     )
 
 }
