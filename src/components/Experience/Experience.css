@@ -2,14 +2,7 @@ section{
    display: flex; 
    flex-direction: column;
 }
-.carousel-container{
-    display: flex;
-    flex-direction: column-reverse;
-    color: white;
-}
-.carousel-container .carousel-indicators{
-    position: relative;
-}
+
 /* @media screen and (max-width:708px) {
     .university-section { 
         flex-wrap: wrap;  
@@ -19,25 +12,3 @@ section{
         margin: 10px;
     }
 } */
-.university-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 40px;
-
-}
-.university-section .card{
-    /* width: 250px; */
-    border-radius: 25px;
-    /* padding: 2px; */
-    background-color: lightgray
-}
-
-.university-section .card img{
-    border-radius: 25px;
-    /* height: 250px; */
-    /* width: 250px; */
-    align-self: center;
-    /* padding-top: 5px; */
-    
-}

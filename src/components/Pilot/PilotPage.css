@@ -12,37 +12,3 @@
     display: flex;
     flex: 50%;
 }
-.aside-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    flex-grow:1;
-    /* background-color: red; */
-}
-.progress-width .progress-bar{
-    width: 100px !important;
-}
-.designation:hover, .name:hover, .location-label:hover{
-    color: red;;
-}
-.name{
-    font-family:'KdamThmorPro';
-}
-.aside-header button{
-    border-radius: 5px;
-}
-.aside-header .location-label{
-    font-size: 18px;
-}
-.aside-header p svg{
-    margin-inline: 10px;
-}
-.aside-header#flip-header .location-label{
-    font-size: 16px;
-}
-
-.aside-header .location-icon{
-    color: red;
-    margin-right: 5px;
-}

@@ -1,0 +1,9 @@
+.carousel-container{
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+    text-align: center;
+}
+.carousel-container .carousel-indicators{
+    position: relative;
+}
