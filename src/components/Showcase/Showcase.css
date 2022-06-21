@@ -13,14 +13,25 @@
     flex-direction: column;
     justify-content: space-evenly;
     justify-items: center;
+    text-align: center;
 }
-.showcase-page .sidebar h2{
-    padding-block: 10px;
+.showcase-page .sidebar a{ 
+    padding-block: 20px;
+    text-decoration: none !important;
+    color: #fff5fe;
 }
-.showcase-page .sidebar h2:hover{
+
+.showcase-page .sidebar a:hover, .showcase-page .sidebar a.active{
     cursor: pointer;
     text-decoration: underline;
+}
+.showcase-page .sidebar a:hover{
     background-color: white;
+    color: black;
+}
+
+.showcase-page .sidebar a.active{
+    background-color: #e3242b;
 }
 
 .showcase-page .display{

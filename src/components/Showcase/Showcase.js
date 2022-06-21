@@ -1,14 +1,16 @@
 import './Showcase.css'
-import Footside from '../Footside/Footstide'
+import {NavLink, Outlet} from 'react-router-dom'
+import Nav from 'react-bootstrap/Nav'
 export default function Showcase(){
     return(
         <div className="showcase-page">
-            <div className='sidebar'>
-                <h2 className=''>Projects</h2>
-                <h2 className=''>Tech</h2>
-            </div>
+            <nav className='sidebar'>
+            
+                <Nav.Link as={NavLink} to="projects">Profile</Nav.Link>
+                <Nav.Link as={NavLink} to="tech">Account</Nav.Link>
+            </nav>
             <div className='display'>
-
+                <Outlet/>
             </div>
         </div>
     )

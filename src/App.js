@@ -13,6 +13,8 @@ import PilotPage from './components/Pilot/PilotPage'
 import Showcase from './components/Showcase/Showcase';
 import Footside from './components/Footside/Footstide';
 import Contact from './components/Contact/Contact';
+import Projects from './components/Showcase/Projects/Projects';
+import Tech from './components/Showcase/Tech/Tech';
 
 function App() {
 
@@ -24,7 +26,10 @@ function App() {
           <Routes>
             <Route exact path="/home" element={<PilotPage />} />
             <Route path="/main" element={<Main />} />
-            <Route path="/showcase" element={<Showcase />} />
+            <Route path="/showcase" element={<Showcase />}>
+              <Route path="projects" element={<Projects />} />
+              <Route path="tech" element={<Tech />} />
+            </Route>
             <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<Navigate replace to="/home" />} />
           </Routes>
