@@ -16,7 +16,15 @@ export default function PilotPage(){
     
     return(
         <div className="pilot-page">
+            <div className="left-side">
             <BubbleArcImage images={images}/>
+            <div className="image-text">
+                <span class="material-symbols-outlined">
+                    flip
+                </span>
+                Click on image to flip!
+            </div>
+            </div>
             <Profile />
         </div>
     )

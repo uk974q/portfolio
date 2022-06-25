@@ -8,25 +8,31 @@
     /* background-color: red; */
 }
 .designation:hover, .name:hover, .location-label:hover{
-    color: red;;
+    color: red;
 }
 .name{
-    font-family:'KdamThmorPro';
+    /* font-family:'KdamThmorPro'; */
+    color: #03045e;
+    text-shadow: 2px 2px 2px #023e8a;
+}
+.designation,.location-label,.location-icon{
+    color: #023e8a !important;
 }
 .aside-header button{
-    border-radius: 5px;
+    border-radius: 0.313rem;
+    background-color: #03045e;
 }
 .aside-header .location-label{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .aside-header p svg{
-    margin-inline: 10px;
+    margin-inline: 0.625rem;
 }
 .aside-header#flip-header .location-label{
-    font-size: 16px;
+    font-size: 1rem
 }
 
 .aside-header .location-icon{
     color: red;
-    margin-right: 5px;
+    margin-right: 0.313rem;
 }

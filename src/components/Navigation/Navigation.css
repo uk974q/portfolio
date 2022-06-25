@@ -28,7 +28,13 @@
 .navbar .fa-caret-down{
     color: white;
 }
-.navbar-nav a{
-    color: beige;
+.nav-link{
+    color:lightslategrey !important;
 
+}
+.nav-link.active{
+    color:whitesmoke !important;
+}
+.nav-link:hover{
+    color:white !important;
 }

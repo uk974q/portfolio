@@ -22,7 +22,6 @@ export default function BubbleSwarmImage(){
         {source:"Java", x1: 80, y1: 170, val: 4, color: "#D1C2E0"},
         {source:"Python", x1: 80, y1: 170, val: 4, color: "#D1C2E0"}
     ])
-
     React.useEffect(()=>{
         width = document.getElementById("svgBs").offsetWidth
         height = 300
@@ -61,7 +60,8 @@ export default function BubbleSwarmImage(){
             .domain(d3.extent(data.map((d) => +d["val"])))
             .range([height/2, 100]);
         
-        color = d3.scaleOrdinal().domain(skills).range(d3.schemePaired);
+        // color = d3.scaleOrdinal().domain(skills).range(d3.schemePaired);
+        color = d3.scaleOrdinal().domain(skills).range(["#980000",'#b50000','#d30000','#eb1d1d','#f50f0f','#ff0000']);
         
         let rDomain = d3.extent(data.map((d) => +d["val"]));
         size = d3.scaleLinear().domain(rDomain).range([15, 40]);
@@ -101,6 +101,7 @@ export default function BubbleSwarmImage(){
             .attr("x",tx)
             .attr("y",ty)
             .attr('fill', 'white')
+            .style("font-size","1.375rem")
             .text(content)
     }
     function removeTooltip(){

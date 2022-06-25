@@ -92,7 +92,7 @@ export default function BubbleArcImage(props){
         .attr("class","path")
         .attr("d",arc)
         .transition().duration(3000)
-        .attr("fill","#800080")
+        .attr("fill","#03045e")
     }
 
     function incrementalArcs(){
@@ -110,11 +110,11 @@ export default function BubbleArcImage(props){
                 let gpath = g.append("path")
                 .attr("class","path")
                 .attr("d",arc)
-                .attr("fill","#800080")
+                .attr("fill","#03045e")
                 .attr("opacity",0.5)
 
                 gpath.transition().duration(3000)
-                    .attr("fill","#800080")
+                    .attr("fill","#0077b6")
                     .attrTween('d',function(d){
                         let i = d3.interpolate(d.startAngle + 0.1, d.endAngle)
                         return function(t){
