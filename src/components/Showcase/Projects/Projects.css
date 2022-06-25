@@ -1,0 +1,17 @@
+.project-page{
+    text-align: center;
+    font-family: 'Epilogue', sans-serif;
+    width: 75%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.reason, .answer, watchout, .note{
+    font-size: 18px;
+    /* margin: auto; */
+}
+.why{
+    margin-top: 20px;
+}

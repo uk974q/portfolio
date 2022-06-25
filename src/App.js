@@ -29,6 +29,7 @@ function App() {
             <Route path="/showcase" element={<Showcase />}>
               <Route path="projects" element={<Projects />} />
               <Route path="tech" element={<Tech />} />
+              <Route path="" element={<Navigate replace to="projects" />} />
             </Route>
             <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<Navigate replace to="/home" />} />

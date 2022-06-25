@@ -1,9 +1,8 @@
 .showcase-page{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* background-color: black; */
     background-color: #fff5fe;
-
     height: 80vh;
 }
 .showcase-page .sidebar{
@@ -36,5 +35,7 @@
 
 .showcase-page .display{
     flex:80%;
+    display: flex;
+    justify-content: center;
 }
 

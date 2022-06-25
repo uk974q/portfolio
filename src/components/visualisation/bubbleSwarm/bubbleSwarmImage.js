@@ -26,7 +26,7 @@ export default function BubbleSwarmImage(){
     React.useEffect(()=>{
         width = document.getElementById("svgBs").offsetWidth
         height = 300
-        console.log("WH",width,height)
+        // console.log("WH",width,height)
         // console.log(document.getElementById("svg").offsetWidth)
         createBubbleSwarmImage()
     })

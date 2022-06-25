@@ -1,0 +1,10 @@
+.tech-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tech-page a{
+    text-decoration: none;
+    font-size: 18px;
+
+}
